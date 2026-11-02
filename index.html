@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>SG — The Next-Generation All-Electric Grand Tourer</title>
+  <meta name="description" content="Meet SG. 1,280 horsepower. 640 miles of range. Zero to sixty in 1.98 seconds. Designed with relentless precision and aerospace-grade aerodynamics.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+  <!-- Ambient Background Lighting -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <!-- Global Apple-Style Navigation Bar -->
+  <header class="global-nav" id="globalNav">
+    <div class="nav-container">
+      <a href="#" class="nav-logo" aria-label="SG Home">
+        <span class="logo-mark">SG</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#overview">Overview</a>
+        <a href="#studio360">360° Studio</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#features">Features</a>
+        <a href="#specs">Tech Specs</a>
+        <a href="#configurator">Configurator</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="nav-icon-btn" id="soundToggleBtn" title="Toggle Ambient Audio" aria-label="Toggle Sound">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+          </svg>
+        </button>
+        <a href="#configurator" class="btn-pill btn-sm">Order SG</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sticky Apple Sub-Navigation Bar -->
+  <div class="sub-nav" id="subNav">
+    <div class="sub-nav-container">
+      <div class="sub-nav-title">
+        <span class="sub-title-text">SG</span>
+        <span class="sub-title-badge">All-New EV GT</span>
+      </div>
+      <div class="sub-nav-menu">
+        <a href="#overview" class="sub-link active">Overview</a>
+        <a href="#studio360" class="sub-link">360° View</a>
+        <a href="#architecture" class="sub-link">Architecture</a>
+        <a href="#features" class="sub-link">Bento Innovations</a>
+        <a href="#specs" class="sub-link">Tech Specs</a>
+        <a href="#configurator" class="sub-link">Pricing</a>
+      </div>
+      <div class="sub-nav-cta">
+        <span class="sub-price">From $79,900</span>
+        <button class="btn-pill btn-primary btn-xs" id="subBuyBtn">Order Now</button>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="overview">
+      <div class="hero-backdrop">
+        <div class="hero-grid-lines"></div>
+        <canvas id="heroStarCanvas"></canvas>
+      </div>
+
+      <div class="hero-content">
+        <div class="badge-pill hero-pill animate-fade">
+          <span class="pill-dot"></span> The Future of Velocity Has Arrived
+        </div>
+
+        <h1 class="hero-title animate-fade delay-1">
+          <span class="gradient-text">SG</span>
+        </h1>
+
+        <p class="hero-tagline animate-fade delay-2">
+          Mind-blowing speed. Head-turning beauty.
+        </p>
+
+        <p class="hero-description animate-fade delay-3">
+          Sculpted by aerodynamic wind tunnels. Powered by a 900V Quad-Motor powertrain. 
+          SG redefines performance luxury with 1,280 horsepower, 640 miles of range, and zero emissions.
+        </p>
+
+        <div class="hero-cta-group animate-fade delay-4">
+          <a href="#configurator" class="btn-pill btn-primary btn-lg">
+            <span>Configure Your SG</span>
+            <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <button class="btn-pill btn-secondary btn-lg" id="playKeynoteBtn">
+            <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+            <span>Watch Keynote Film</span>
+          </button>
+          <a href="#studio360" class="btn-pill btn-glass btn-lg">
+            <span>Explore in 360°</span>
+          </a>
+        </div>
+
+        <!-- Hero Spec Ribbon -->
+        <div class="spec-ribbon animate-fade delay-5">
+          <div class="spec-card">
+            <span class="spec-val" data-target="1.98" data-suffix="s">1.98s</span>
+            <span class="spec-label">0–60 mph Acceleration</span>
+            <span class="spec-detail">Fastest in its class</span>
+          </div>
+          <div class="spec-divider"></div>
+          <div class="spec-card">
+            <span class="spec-val" data-target="640" data-suffix=" mi">640 mi</span>
+            <span class="spec-label">Estimated EPA Range</span>
+            <span class="spec-detail">Solid-State Hybrid Cell</span>
+          </div>
+          <div class="spec-divider"></div>
+          <div class="spec-card">
+            <span class="spec-val" data-target="1280" data-suffix=" hp">1,280 hp</span>
+            <span class="spec-label">Peak Horsepower</span>
+            <span class="spec-detail">Quad-Motor Torque Vectoring</span>
+          </div>
+          <div class="spec-divider"></div>
+          <div class="spec-card">
+            <span class="spec-val" data-target="15" data-suffix=" min">15 min</span>
+            <span class="spec-label">10% to 80% HyperCharge</span>
+            <span class="spec-detail">900-Volt Architecture</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <span class="scroll-mouse">
+          <span class="scroll-wheel"></span>
+        </span>
+        <span class="scroll-text">Scroll to explore</span>
+      </div>
+    </section>
+
+    <!-- 360° INTERACTIVE STUDIO SECTION -->
+    <section class="studio-section reveal-on-scroll" id="studio360">
+      <div class="section-header">
+        <span class="section-eyebrow">Interactive Studio</span>
+        <h2 class="section-title">Immerse from every degree.</h2>
+        <p class="section-subtitle">
+          Rotate, inspect aerodynamic contours, illuminate matrix beams, and personalize bespoke finishes in real-time WebGL 3D.
+        </p>
+      </div>
+
+      <div class="studio-container">
+        <!-- 3D Canvas Viewport -->
+        <div class="studio-viewport" id="studioViewport">
+          <canvas id="car3DCanvas"></canvas>
+          
+          <div class="studio-drag-hint" id="dragHint">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+            </svg>
+            <span>Drag to rotate 360°</span>
+          </div>
+
+          <!-- Live Studio HUD Overlays -->
+          <div class="studio-hud">
+            <div class="hud-item hud-speed">
+              <span class="hud-label">Drag Drag Coefficient</span>
+              <span class="hud-value">0.19 Cd</span>
+            </div>
+            <div class="hud-item hud-active-color">
+              <span class="hud-label">Finish</span>
+              <span class="hud-value" id="hudColorName">Space Obsidian</span>
+            </div>
+            <div class="hud-item hud-aero">
+              <span class="hud-label">Downforce Mode</span>
+              <span class="hud-value" id="hudAeroStatus">Active Track</span>
+            </div>
+          </div>
+
+          <!-- Studio Interactive View Angle Presets -->
+          <div class="studio-presets">
+            <button class="preset-btn active" data-angle="threeQuarter" title="Front 3/4 View">Front 3/4</button>
+            <button class="preset-btn" data-angle="side" title="Side Aerodynamic Profile">Profile</button>
+            <button class="preset-btn" data-angle="rear" title="Rear Aero Diffuser">Rear</button>
+            <button class="preset-btn" data-angle="top" title="Top Glass Canopy">Canopy</button>
+            <button class="preset-btn" data-angle="front" title="Front Laser Grille">Fascia</button>
+          </div>
+        </div>
+
+        <!-- Studio Control Bar -->
+        <div class="studio-controls-bar">
+          <!-- Color Switcher -->
+          <div class="control-group">
+            <span class="control-label">Exterior Finish:</span>
+            <div class="color-palette" id="studioColorPalette">
+              <button class="color-swatch active" data-color="#0a0a0c" data-color-name="Space Obsidian" data-paint-type="metallic" title="Space Obsidian">
+                <span class="swatch-fill" style="background: linear-gradient(135deg, #1f1f24, #050508);"></span>
+              </button>
+              <button class="color-swatch" data-color="#d1d5db" data-color-name="Liquid Titanium" data-paint-type="metallic" title="Liquid Titanium">
+                <span class="swatch-fill" style="background: linear-gradient(135deg, #f3f4f6, #9ca3af);"></span>
+              </button>
+              <button class="color-swatch" data-color="#0062ff" data-color-name="Pacific Electric" data-paint-type="candy" title="Pacific Electric">
+                <span class="swatch-fill" style="background: linear-gradient(135deg, #38bdf8, #0044cc);"></span>
+              </button>
+              <button class="color-swatch" data-color="#c5162a" data-color-name="Solar Flare Red" data-paint-type="pearl" title="Solar Flare Red">
+                <span class="swatch-fill" style="background: linear-gradient(135deg, #ff4d4d, #8b0000);"></span>
+              </button>
+              <button class="color-swatch" data-color="#144238" data-color-name="Verdant Emerald" data-paint-type="metallic" title="Verdant Emerald">
+                <span class="swatch-fill" style="background: linear-gradient(135deg, #2dd4bf, #0a2e26);"></span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Studio Lighting / Effects Toggle -->
+          <div class="control-group action-group">
+            <button class="btn-control" id="lightsToggleBtn">
+              <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+              </svg>
+              <span>Matrix Headlights: <b id="lightsStatusText">ON</b></span>
+            </button>
+
+            <button class="btn-control" id="spoilerToggleBtn">
+              <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 14h16M7 10h10M10 6h4"/>
+              </svg>
+              <span>Active Aero Wing: <b id="spoilerStatusText">UP</b></span>
+            </button>
+
+            <button class="btn-control" id="autoRotateToggleBtn">
+              <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.19"/>
+              </svg>
+              <span>Turntable: <b id="autoRotateStatusText">AUTO</b></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARCHITECTURE & POWERTRAIN (Sticky Peel-Back Experience) -->
+    <section class="architecture-section reveal-on-scroll" id="architecture">
+      <div class="section-header">
+        <span class="section-eyebrow">Engineering Masterpiece</span>
+        <h2 class="section-title">Anatomy of pure power.</h2>
+        <p class="section-subtitle">
+          Constructed from a single monolithic carbon-aluminum exoskeleton. Designed to distribute thousands of Newton-meters of torque in sub-milliseconds.
+        </p>
+      </div>
+
+      <div class="arch-container">
+        <!-- Interactive Sticky Scroller -->
+        <div class="arch-scrolly-wrapper">
+          <div class="arch-visual-stage">
+            <div class="arch-display-card" id="archDisplayCard">
+              <div class="arch-diagram-wrapper">
+                <div class="arch-hologram" id="archHologram">
+                  <div class="hologram-glow"></div>
+                  <!-- Dynamic SVG Architectural View -->
+                  <svg class="arch-svg" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                      <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.8"/>
+                        <stop offset="100%" stop-color="#2997ff" stop-opacity="0.9"/>
+                      </linearGradient>
+                      <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#ff7b00" stop-opacity="0.9"/>
+                        <stop offset="100%" stop-color="#ff0055" stop-opacity="0.7"/>
+                      </linearGradient>
+                      <filter id="glowFilter">
+                        <feGaussianBlur stdDeviation="6" result="blur"/>
+                        <feMerge>
+                          <feMergeNode in="blur"/>
+                          <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                      </filter>
+                    </defs>
+                    <!-- Car Silhouette Grid Background -->
+                    <path class="arch-chassis-outline" d="M120 320 C180 320, 210 260, 280 250 C360 240, 480 240, 560 260 C630 280, 680 320, 720 320 L740 340 L80 340 Z" stroke="#333" stroke-width="2" stroke-dasharray="4 4"/>
+                    <!-- Monocoque Frame -->
+                    <g class="arch-layer arch-layer-1" id="layerMonocoque">
+                      <path d="M140 310 L220 230 L320 180 L520 180 L620 240 L700 300 L680 330 L160 330 Z" stroke="url(#cyanGrad)" stroke-width="3" fill="rgba(0,240,255,0.06)" filter="url(#glowFilter)"/>
+                      <circle cx="220" cy="230" r="4" fill="#00f0ff"/>
+                      <circle cx="620" cy="240" r="4" fill="#00f0ff"/>
+                      <text x="210" y="210" fill="#00f0ff" font-size="12" font-family="Space Grotesk">Carbon Monocoque Core</text>
+                    </g>
+                    <!-- Battery Pack (Floor Level) -->
+                    <g class="arch-layer arch-layer-2" id="layerBattery">
+                      <rect x="220" y="300" width="380" height="35" rx="6" fill="rgba(41,151,255,0.2)" stroke="#2997ff" stroke-width="2.5" filter="url(#glowFilter)"/>
+                      <!-- Battery Cells -->
+                      <line x1="260" y1="305" x2="260" y2="330" stroke="#00f0ff" stroke-width="2" stroke-dasharray="2 3"/>
+                      <line x1="310" y1="305" x2="310" y2="330" stroke="#00f0ff" stroke-width="2" stroke-dasharray="2 3"/>
+                      <line x1="360" y1="305" x2="360" y2="330" stroke="#00f0ff" stroke-width="2" stroke-dasharray="2 3"/>
+                      <line x1="410" y1="305" x2="410" y2="330" stroke="#00f0ff" stroke-width="2" stroke-dasharray="2 3"/>
+                      <line x1="460" y1="305" x2="460" y2="330" stroke="#00f0ff" stroke-width="2" stroke-dasharray="2 3"/>
+                      <line x1="510" y1="305" x2="510" y2="330" stroke="#00f0ff" stroke-width="2" stroke-dasharray="2 3"/>
+                      <line x1="560" y1="305" x2="560" y2="330" stroke="#00f0ff" stroke-width="2" stroke-dasharray="2 3"/>
+                      <text x="320" y="323" fill="#ffffff" font-size="13" font-weight="bold" font-family="Space Grotesk">135 kWh Solid-State Pack</text>
+                    </g>
+                    <!-- Quad Motors & Inverters -->
+                    <g class="arch-layer arch-layer-3" id="layerMotors">
+                      <!-- Front Motors -->
+                      <circle cx="180" cy="315" r="30" stroke="url(#amberGrad)" stroke-width="3" fill="rgba(255,123,0,0.2)" filter="url(#glowFilter)"/>
+                      <circle cx="180" cy="315" r="14" fill="#ff7b00"/>
+                      <!-- Rear Dual Motors -->
+                      <circle cx="640" cy="315" r="34" stroke="url(#amberGrad)" stroke-width="3.5" fill="rgba(255,123,0,0.25)" filter="url(#glowFilter)"/>
+                      <circle cx="640" cy="315" r="16" fill="#ff7b00"/>
+                      <text x="135" y="375" fill="#ffaa00" font-size="12" font-family="Space Grotesk">Twin Front Motors (450 hp)</text>
+                      <text x="575" y="375" fill="#ffaa00" font-size="12" font-family="Space Grotesk">Dual Rear Torquers (830 hp)</text>
+                    </g>
+                    <!-- Air Suspension & Wheels -->
+                    <g class="arch-layer arch-layer-4" id="layerSuspension">
+                      <circle cx="180" cy="325" r="48" stroke="#555" stroke-width="2" fill="none"/>
+                      <circle cx="640" cy="325" r="50" stroke="#555" stroke-width="2" fill="none"/>
+                      <!-- Damper Springs -->
+                      <path d="M180 260 L180 290" stroke="#00f0ff" stroke-width="4" stroke-linecap="round"/>
+                      <path d="M640 250 L640 285" stroke="#00f0ff" stroke-width="4" stroke-linecap="round"/>
+                    </g>
+                  </svg>
+                </div>
+
+                <div class="arch-data-overlay">
+                  <div class="data-chip">
+                    <span class="chip-label">Torsional Rigidity</span>
+                    <span class="chip-val">58,000 Nm/deg</span>
+                  </div>
+                  <div class="data-chip">
+                    <span class="chip-label">Weight Distribution</span>
+                    <span class="chip-val">49.8 : 50.2</span>
+                  </div>
+                  <div class="data-chip">
+                    <span class="chip-label">Center of Gravity</span>
+                    <span class="chip-val">17.2 inches</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Narrative Steps -->
+          <div class="arch-steps-column">
+            <div class="arch-step-card active" data-step="1">
+              <span class="step-num">01 / CHASSIS</span>
+              <h3 class="step-title">Aerospace Carbon Monocoque</h3>
+              <p class="step-desc">
+                Forged from high-modulus dry carbon fiber intertwined with recycled 7000-series aerospace alloy. 
+                SG offers the highest structural stiffness of any production road car, yielding razor-sharp handling and optimal passive safety.
+              </p>
+              <ul class="step-bullets">
+                <li>30% lighter than standard aluminum unibody</li>
+                <li>Formula 1 inspired front crash crush-cone</li>
+                <li>Acoustic isolation layer cancels exterior vibrations</li>
+              </ul>
+            </div>
+
+            <div class="arch-step-card" data-step="2">
+              <span class="step-num">02 / ENERGY</span>
+              <h3 class="step-title">135 kWh Solid-State Hybrid Pack</h3>
+              <p class="step-desc">
+                High-nickel solid electrolyte cells operate across extreme temperature ranges without degradation. 
+                Coupled with a 900V Silicon Carbide architecture, SG replenishes 350 miles of range in just 12 minutes.
+              </p>
+              <ul class="step-bullets">
+                <li>Bi-directional Vehicle-to-Home power output</li>
+                <li>Thermal matrix jacket with active glycol cooling</li>
+                <li>Guaranteed 92% capacity retention after 250,000 miles</li>
+              </ul>
+            </div>
+
+            <div class="arch-step-card" data-step="3">
+              <span class="step-num">03 / POWERTRAIN</span>
+              <h3 class="step-title">Quad-Motor Independent Torque Vectoring</h3>
+              <p class="step-desc">
+                One motor per wheel. Each wheel recalculates tractive friction 1,000 times per second, rotating the car around apexes with superhuman agility and zero understeer.
+              </p>
+              <ul class="step-bullets">
+                <li>1,280 peak horsepower / 1,420 lb-ft torque</li>
+                <li>Zero mechanical differentials — zero power loss</li>
+                <li>215 mph electronically limited top speed</li>
+              </ul>
+            </div>
+
+            <div class="arch-step-card" data-step="4">
+              <span class="step-num">04 / CHASSIS CONTROL</span>
+              <h3 class="step-title">Predictive Active Air Suspension</h3>
+              <p class="step-desc">
+                Dual front LiDAR pods and forward cameras scan the road 150 meters ahead, proactively adjusting damper firmness and ride height before the tire ever touches a pothole.
+              </p>
+              <ul class="step-bullets">
+                <li>Height variable from 4.2 in (Track) to 6.8 in (Urban)</li>
+                <li>Active anti-roll actuators eliminate corner lean</li>
+                <li>Four-wheel active steering with 8.5° rear counter-turn</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENTO GRID INNOVATIONS SECTION (Apple-Style Bento) -->
+    <section class="bento-section reveal-on-scroll" id="features">
+      <div class="section-header">
+        <span class="section-eyebrow">Relentless Innovation</span>
+        <h2 class="section-title">Designed like nothing else.</h2>
+        <p class="section-subtitle">
+          Every surface, sensor, and circuit board exists with singular purpose: uncompromised exhilaration.
+        </p>
+      </div>
+
+      <div class="bento-grid">
+        <!-- Bento Item 1: Large Wide Cockpit -->
+        <div class="bento-card bento-2x2 bento-cockpit reveal-on-scroll stagger-1">
+          <div class="bento-visual">
+            <div class="cockpit-screen-mock">
+              <div class="cockpit-nav-view">
+                <div class="screen-header">
+                  <span class="os-brand">HorizonOS 3.0</span>
+                  <span class="os-time">72°F · 2:45 PM · 89% SOC</span>
+                </div>
+                <div class="screen-telemetry">
+                  <div class="telemetry-speed">
+                    <span class="val">84</span>
+                    <span class="unit">MPH</span>
+                  </div>
+                  <div class="telemetry-bar">
+                    <div class="bar-fill" style="width: 78%;"></div>
+                  </div>
+                  <span class="telemetry-mode">TRACK PERFORMANCE MODE</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bento-content">
+            <span class="bento-tag">Cabin Intelligence</span>
+            <h3 class="bento-title">38-inch Curved 8K Spatial Horizon Display</h3>
+            <p class="bento-desc">
+              Spanning pillar-to-pillar with Mini-LED backlighting, 1,000,000:1 contrast ratio, and zero perceptible latency. 
+              Powered by Apple Silicon-grade dual neural engines for instantaneous voice comprehension and tactile micro-haptics.
+            </p>
+          </div>
+        </div>
+
+        <!-- Bento Item 2: Aero -->
+        <div class="bento-card bento-1x1 bento-aero reveal-on-scroll stagger-2">
+          <div class="bento-icon-box">
+            <svg class="bento-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2"/>
+              <path d="M9.6 4.6A2 2 0 1 1 11 8H2"/>
+              <path d="M12.6 19.4A2 2 0 1 0 14 16H2"/>
+            </svg>
+          </div>
+          <div class="bento-content">
+            <span class="bento-tag">Aerodynamics</span>
+            <h3 class="bento-title">0.19 Drag Coefficient</h3>
+            <p class="bento-desc">
+              Slices through air with active lower shutters, hidden flush pop-out door handles, and vortex underbody diffusers.
+            </p>
+          </div>
+        </div>
+
+        <!-- Bento Item 3: Sound -->
+        <div class="bento-card bento-1x1 bento-audio reveal-on-scroll stagger-3">
+          <div class="sound-wave-visual">
+            <span class="wave-bar"></span>
+            <span class="wave-bar"></span>
+            <span class="wave-bar"></span>
+            <span class="wave-bar"></span>
+            <span class="wave-bar"></span>
+          </div>
+          <div class="bento-content">
+            <span class="bento-tag">Acoustics</span>
+            <h3 class="bento-title">28-Speaker Spatial Audio Sanctuary</h3>
+            <p class="bento-desc">
+              Engineered with headrest directional speakers and real-time inverse road noise cancellation. Whispering silence at 120 mph.
+            </p>
+          </div>
+        </div>
+
+        <!-- Bento Item 4: Neural Co-Pilot -->
+        <div class="bento-card bento-1x2 bento-ai reveal-on-scroll stagger-2">
+          <div class="ai-radar-visual">
+            <div class="radar-circle circle-1"></div>
+            <div class="radar-circle circle-2"></div>
+            <div class="radar-sweep"></div>
+            <div class="radar-point point-1"></div>
+            <div class="radar-point point-2"></div>
+          </div>
+          <div class="bento-content">
+            <span class="bento-tag">Autonomous Core</span>
+            <h3 class="bento-title">SG Neural Co-Pilot Level 3+</h3>
+            <p class="bento-desc">
+              Redundant triple-LiDAR, 12 ultra-HD cameras, and 500 TOPS neural processor. 
+              Hands-free highway navigation, automated high-speed overtake, and door-to-door valet summon.
+            </p>
+          </div>
+        </div>
+
+        <!-- Bento Item 5: Active Wing -->
+        <div class="bento-card bento-1x1 bento-wing reveal-on-scroll stagger-3">
+          <div class="bento-icon-box">
+            <svg class="bento-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 17l6-6 4 4 8-8"/>
+              <path d="M14 7h7v7"/>
+            </svg>
+          </div>
+          <div class="bento-content">
+            <span class="bento-tag">Dynamic Aero</span>
+            <h3 class="bento-title">Active Bi-Plane Spoiler</h3>
+            <p class="bento-desc">
+              Generates 450 lbs of downforce under hard braking, shortening stopping distances by 18%.
+            </p>
+          </div>
+        </div>
+
+        <!-- Bento Item 6: Circular Sustainability -->
+        <div class="bento-card bento-1x1 bento-green reveal-on-scroll stagger-4">
+          <div class="bento-icon-box">
+            <svg class="bento-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+            </svg>
+          </div>
+          <div class="bento-content">
+            <span class="bento-tag">100% Circular</span>
+            <h3 class="bento-title">Sustainable Luxury</h3>
+            <p class="bento-desc">
+              Interior handcrafted with mushroom mycelium bio-leather, ocean-recovered fiber fabrics, and open-pore certified walnut.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FULL-BLEED NARRATIVE SPOTLIGHTS (Apple-Style Story Chapters) -->
+    <section class="story-section reveal-on-scroll">
+      <div class="story-chapter">
+        <div class="story-text-container">
+          <span class="story-eyebrow">Design Language</span>
+          <h2 class="story-heading">Form follows perfection.</h2>
+          <p class="story-body">
+            Every curve on SG serves an aerodynamic mandate. 
+            The fastback glasshouse tapers seamlessly into an integrated Kamm-tail, reducing wake turbulence while maintaining majestic GT proportions. 
+            Flush glazing, recessed intake ducts, and active wheel covers work in symphony to cheat the wind.
+          </p>
+          <div class="story-metrics">
+            <div class="metric">
+              <span class="metric-num">0.19</span>
+              <span class="metric-label">Drag Coefficient</span>
+            </div>
+            <div class="metric">
+              <span class="metric-num">50:50</span>
+              <span class="metric-label">Ideal Weight Balance</span>
+            </div>
+          </div>
+        </div>
+        <div class="story-visual-container">
+          <div class="story-mockup-frame">
+            <div class="story-car-art side-profile-art">
+              <!-- Geometric Vector Art of the Car Profile -->
+              <svg viewBox="0 0 900 350" fill="none" class="art-svg">
+                <!-- Sleek Car Silhouette -->
+                <path d="M80 270 C140 270 190 265 240 245 C290 225 350 170 430 155 C520 140 650 150 720 200 C780 245 830 265 870 270 L870 280 L80 280 Z" fill="url(#carBodyGrad)" stroke="#444" stroke-width="2"/>
+                <!-- Windows -->
+                <path d="M370 180 C440 165 540 162 610 175 C640 180 670 200 690 220 L400 220 Z" fill="#0c1017" stroke="#2997ff" stroke-width="1.5"/>
+                <!-- Wheels -->
+                <circle cx="230" cy="275" r="45" fill="#111" stroke="#38bdf8" stroke-width="3"/>
+                <circle cx="230" cy="275" r="25" fill="#1e2430" stroke="#555" stroke-width="2"/>
+                <circle cx="730" cy="275" r="45" fill="#111" stroke="#38bdf8" stroke-width="3"/>
+                <circle cx="730" cy="275" r="25" fill="#1e2430" stroke="#555" stroke-width="2"/>
+                <!-- Laser Headlight Beam -->
+                <path d="M80 268 L10 275 L10 260 Z" fill="url(#cyanBeam)" opacity="0.8"/>
+                <defs>
+                  <linearGradient id="carBodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#2a2e38"/>
+                    <stop offset="50%" stop-color="#12151c"/>
+                    <stop offset="100%" stop-color="#07080b"/>
+                  </linearGradient>
+                  <linearGradient id="cyanBeam" x1="100%" y1="0%" x2="0%" y2="0%">
+                    <stop offset="0%" stop-color="#00f0ff"/>
+                    <stop offset="100%" stop-color="transparent"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="art-caption">Aero-sculpted silhouette in Liquid Titanium finish</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DETAILED COMPARISON & TECH SPECS (Apple-Style Comparison Grid) -->
+    <section class="specs-section reveal-on-scroll" id="specs">
+      <div class="section-header">
+        <span class="section-eyebrow">Technical Specifications</span>
+        <h2 class="section-title">Compare models and capabilities.</h2>
+        <p class="section-subtitle">
+          Three bespoke configurations engineered to push the boundaries of physics and luxury.
+        </p>
+      </div>
+
+      <div class="specs-wrapper">
+        <!-- Model Selector Tabs -->
+        <div class="model-tabs" id="modelTabs">
+          <button class="model-tab" data-model="pure">
+            <span class="tab-grade">SG Pure</span>
+            <span class="tab-summary">Rear-Wheel Drive · 520 mi</span>
+            <span class="tab-price">$79,900</span>
+          </button>
+          <button class="model-tab active" data-model="grand">
+            <span class="tab-badge">Most Popular</span>
+            <span class="tab-grade">SG Grand</span>
+            <span class="tab-summary">Dual-Motor AWD · 640 mi</span>
+            <span class="tab-price">$99,900</span>
+          </button>
+          <button class="model-tab" data-model="apex">
+            <span class="tab-grade">SG Apex Track</span>
+            <span class="tab-summary">Quad-Motor AWD · 1,280 hp</span>
+            <span class="tab-price">$129,900</span>
+          </button>
+        </div>
+
+        <!-- Matrix Table -->
+        <div class="specs-table-container">
+          <table class="specs-table">
+            <thead>
+              <tr>
+                <th>Key Metric</th>
+                <th class="col-pure">SG Pure</th>
+                <th class="col-grand highlight-col">SG Grand</th>
+                <th class="col-apex">SG Apex Track</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Row Group: Performance -->
+              <tr class="table-group-header">
+                <td colspan="4">Performance & Dynamics</td>
+              </tr>
+              <tr>
+                <td>0–60 mph Acceleration</td>
+                <td class="col-pure">3.4 seconds</td>
+                <td class="col-grand highlight-col"><strong>2.6 seconds</strong></td>
+                <td class="col-apex"><strong>1.98 seconds</strong></td>
+              </tr>
+              <tr>
+                <td>Peak Horsepower</td>
+                <td class="col-pure">540 hp</td>
+                <td class="col-grand highlight-col">820 hp</td>
+                <td class="col-apex">1,280 hp</td>
+              </tr>
+              <tr>
+                <td>Top Track Speed</td>
+                <td class="col-pure">155 mph</td>
+                <td class="col-grand highlight-col">175 mph</td>
+                <td class="col-apex">215 mph</td>
+              </tr>
+              <tr>
+                <td>Powertrain Layout</td>
+                <td class="col-pure">Single Rear Motor</td>
+                <td class="col-grand highlight-col">Dual-Motor e-AWD</td>
+                <td class="col-apex">Quad-Motor Torque Vectoring</td>
+              </tr>
+              <tr>
+                <td>Braking (60–0 mph)</td>
+                <td class="col-pure">106 ft</td>
+                <td class="col-grand highlight-col">98 ft</td>
+                <td class="col-apex">88 ft (Carbon-Ceramic)</td>
+              </tr>
+
+              <!-- Row Group: Battery & Charging -->
+              <tr class="table-group-header">
+                <td colspan="4">Battery & Charging</td>
+              </tr>
+              <tr>
+                <td>EPA Estimated Range</td>
+                <td class="col-pure">520 miles</td>
+                <td class="col-grand highlight-col"><strong>640 miles</strong></td>
+                <td class="col-apex">560 miles</td>
+              </tr>
+              <tr>
+                <td>Battery Architecture</td>
+                <td class="col-pure">800-Volt Architecture</td>
+                <td class="col-grand highlight-col">900-Volt HyperCore</td>
+                <td class="col-apex">900-Volt HyperCore</td>
+              </tr>
+              <tr>
+                <td>Peak Charging Rate</td>
+                <td class="col-pure">300 kW DC</td>
+                <td class="col-grand highlight-col">350 kW DC</td>
+                <td class="col-apex">400 kW Ultra-DC</td>
+              </tr>
+              <tr>
+                <td>10% to 80% Fast Charge</td>
+                <td class="col-pure">19 minutes</td>
+                <td class="col-grand highlight-col">15 minutes</td>
+                <td class="col-apex">12 minutes</td>
+              </tr>
+
+              <!-- Row Group: Chassis & Tech -->
+              <tr class="table-group-header">
+                <td colspan="4">Technology & Dimensions</td>
+              </tr>
+              <tr>
+                <td>Suspension System</td>
+                <td class="col-pure">Adaptive Coilovers</td>
+                <td class="col-grand highlight-col">Predictive Air Suspension</td>
+                <td class="col-apex">Active Roll Stabilized Air</td>
+              </tr>
+              <tr>
+                <td>Infotainment HorizonOS</td>
+                <td class="col-pure">32" Dual Panoramic</td>
+                <td class="col-grand highlight-col">38" Curved 8K Mini-LED</td>
+                <td class="col-apex">38" 8K + Dual Rear HUDs</td>
+              </tr>
+              <tr>
+                <td>Autonomous Driving</td>
+                <td class="col-pure">Co-Pilot PilotAssist</td>
+                <td class="col-grand highlight-col">Neural Co-Pilot (Level 2+)</td>
+                <td class="col-apex">Neural Co-Pilot (Level 3+ LiDAR)</td>
+              </tr>
+              <tr>
+                <td>Cargo Capacity</td>
+                <td class="col-pure">28.4 cu ft (Frunk + Trunk)</td>
+                <td class="col-grand highlight-col">28.4 cu ft</td>
+                <td class="col-apex">26.2 cu ft</td>
+              </tr>
+              <tr>
+                <td>Curb Weight</td>
+                <td class="col-pure">4,280 lbs</td>
+                <td class="col-grand highlight-col">4,450 lbs</td>
+                <td class="col-apex">4,520 lbs</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPLE-STYLE INTERACTIVE PRICING & CONFIGURATOR -->
+    <section class="configurator-section reveal-on-scroll" id="configurator">
+      <div class="section-header">
+        <span class="section-eyebrow">Design Your SG</span>
+        <h2 class="section-title">Configure and Reserve.</h2>
+        <p class="section-subtitle">
+          Select your trim, bespoke colorways, aerodynamic wheels, and autonomous options.
+        </p>
+      </div>
+
+      <div class="config-container">
+        <!-- Interactive Preview Column -->
+        <div class="config-visual-col">
+          <div class="config-preview-card">
+            <div class="config-car-canvas-box">
+              <canvas id="configPreviewCanvas"></canvas>
+              <div class="config-badge-chip" id="configModelBadge">SG Grand AWD</div>
+            </div>
+            <div class="config-visual-specs">
+              <div class="vspec">
+                <span class="vspec-num" id="cfgSpecAccel">2.6s</span>
+                <span class="vspec-txt">0-60 mph</span>
+              </div>
+              <div class="vspec">
+                <span class="vspec-num" id="cfgSpecRange">640 mi</span>
+                <span class="vspec-txt">Range</span>
+              </div>
+              <div class="vspec">
+                <span class="vspec-num" id="cfgSpecPower">820 hp</span>
+                <span class="vspec-txt">Horsepower</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Customization Controls Column -->
+        <div class="config-controls-col">
+          
+          <!-- Step 1: Model Trim Selection -->
+          <div class="config-step">
+            <h3 class="step-head">1. Choose Powertrain</h3>
+            <div class="trim-picker">
+              <div class="trim-option" data-trim="pure" data-price="79900" data-accel="3.4s" data-range="520 mi" data-power="540 hp">
+                <div class="trim-info">
+                  <span class="trim-name">SG Pure</span>
+                  <span class="trim-desc">Single Motor RWD · 520 mi range</span>
+                </div>
+                <div class="trim-price-tag">$79,900</div>
+              </div>
+
+              <div class="trim-option selected" data-trim="grand" data-price="99900" data-accel="2.6s" data-range="640 mi" data-power="820 hp">
+                <div class="trim-info">
+                  <span class="trim-name">SG Grand</span>
+                  <span class="trim-desc">Dual Motor AWD · 640 mi range</span>
+                </div>
+                <div class="trim-price-tag">$99,900</div>
+              </div>
+
+              <div class="trim-option" data-trim="apex" data-price="129900" data-accel="1.98s" data-range="560 mi" data-power="1,280 hp">
+                <div class="trim-info">
+                  <span class="trim-name">SG Apex Track</span>
+                  <span class="trim-desc">Quad Motor AWD · 1,280 hp · Track Aero</span>
+                </div>
+                <div class="trim-price-tag">$129,900</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2: Exterior Paint Finish -->
+          <div class="config-step">
+            <h3 class="step-head">2. Exterior Color — <span id="selectedPaintName">Space Obsidian</span></h3>
+            <div class="cfg-color-row">
+              <button class="cfg-swatch selected" data-paint="Space Obsidian" data-hex="#0a0a0c" data-cost="0" title="Space Obsidian (Included)">
+                <span class="swatch-circle" style="background: #0a0a0c;"></span>
+              </button>
+              <button class="cfg-swatch" data-paint="Liquid Titanium" data-hex="#d1d5db" data-cost="1500" title="Liquid Titanium (+$1,500)">
+                <span class="swatch-circle" style="background: #d1d5db;"></span>
+              </button>
+              <button class="cfg-swatch" data-paint="Pacific Electric Blue" data-hex="#0062ff" data-cost="2000" title="Pacific Electric (+$2,000)">
+                <span class="swatch-circle" style="background: #0062ff;"></span>
+              </button>
+              <button class="cfg-swatch" data-paint="Solar Flare Red" data-hex="#c5162a" data-cost="2500" title="Solar Flare Red (+$2,500)">
+                <span class="swatch-circle" style="background: #c5162a;"></span>
+              </button>
+              <button class="cfg-swatch" data-paint="Verdant Emerald" data-hex="#144238" data-cost="2500" title="Verdant Emerald (+$2,500)">
+                <span class="swatch-circle" style="background: #144238;"></span>
+              </button>
+            </div>
+            <div class="step-cost-label" id="paintCostLabel">Included</div>
+          </div>
+
+          <!-- Step 3: Wheels -->
+          <div class="config-step">
+            <h3 class="step-head">3. Wheels & Tires</h3>
+            <div class="wheel-picker">
+              <div class="wheel-option selected" data-wheel="20-aero" data-cost="0">
+                <span class="wheel-name">20" AeroStream Alloy Wheels</span>
+                <span class="wheel-sub">Optimized for maximum 640 mi range</span>
+                <span class="wheel-cost">Included</span>
+              </div>
+              <div class="wheel-option" data-wheel="21-carbon" data-cost="2800">
+                <span class="wheel-name">21" Forged Carbon Turbofan</span>
+                <span class="wheel-sub">High brake cooling aerodynamics</span>
+                <span class="wheel-cost">+$2,800</span>
+              </div>
+              <div class="wheel-option" data-wheel="22-track" data-cost="4500">
+                <span class="wheel-name">22" Track Spoke with Michelin Pilot Sport 5S</span>
+                <span class="wheel-sub">Ultimate lateral grip for track days</span>
+                <span class="wheel-cost">+$4,500</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 4: Interior Theme -->
+          <div class="config-step">
+            <h3 class="step-head">4. Interior Sanctuary</h3>
+            <div class="interior-picker">
+              <div class="interior-option selected" data-interior="eclipse" data-cost="0">
+                <span class="interior-dot" style="background: #1a1a1f;"></span>
+                <div class="interior-txt">
+                  <span class="int-title">Eclipse Black</span>
+                  <span class="int-sub">Recycled microfiber & obsidian trim</span>
+                </div>
+                <span class="int-cost">Included</span>
+              </div>
+              <div class="interior-option" data-interior="lunar" data-cost="1800">
+                <span class="interior-dot" style="background: #ececed;"></span>
+                <div class="interior-txt">
+                  <span class="int-title">Lunar White</span>
+                  <span class="int-sub">Stain-resistant bio-leather & matte titanium</span>
+                </div>
+                <span class="int-cost">+$1,800</span>
+              </div>
+              <div class="interior-option" data-interior="saddle" data-cost="2200">
+                <span class="interior-dot" style="background: #96532b;"></span>
+                <div class="interior-txt">
+                  <span class="int-title">Terracotta Saddle</span>
+                  <span class="int-sub">Artisan stitched mycelium & open-pore walnut</span>
+                </div>
+                <span class="int-cost">+$2,200</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 5: Technology Packages -->
+          <div class="config-step">
+            <h3 class="step-head">5. Optional Packages</h3>
+            <div class="addons-list">
+              <label class="addon-item">
+                <input type="checkbox" id="addonCopilot" data-cost="6000" checked>
+                <div class="addon-body">
+                  <div class="addon-header">
+                    <span class="addon-name">SG Neural Co-Pilot Full Autonomous</span>
+                    <span class="addon-cost">+$6,000</span>
+                  </div>
+                  <p class="addon-desc">Automated highway nav, lane changing, traffic light recognition, and summon mode.</p>
+                </div>
+              </label>
+
+              <label class="addon-item">
+                <input type="checkbox" id="addonAudio" data-cost="2200">
+                <div class="addon-body">
+                  <div class="addon-header">
+                    <span class="addon-name">28-Speaker Spatial Audio Sanctuary</span>
+                    <span class="addon-cost">+$2,200</span>
+                  </div>
+                  <p class="addon-desc">Dolby Atmos acoustic glass package with headrest drivers & active noise cancellation.</p>
+                </div>
+              </label>
+
+              <label class="addon-item">
+                <input type="checkbox" id="addonBrakes" data-cost="4500">
+                <div class="addon-body">
+                  <div class="addon-header">
+                    <span class="addon-name">Carbon-Ceramic Matrix Brake Package</span>
+                    <span class="addon-cost">+$4,500</span>
+                  </div>
+                  <p class="addon-desc">420mm front rotors with 10-piston calipers in Acid Orange.</p>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Payment Calculator & Total -->
+          <div class="pricing-summary-card">
+            <div class="payment-tabs">
+              <button class="pay-tab active" data-type="cash">Purchase</button>
+              <button class="pay-tab" data-type="lease">Lease</button>
+              <button class="pay-tab" data-type="finance">Finance</button>
+            </div>
+
+            <div class="price-display-block">
+              <div class="total-label">Estimated Vehicle Price</div>
+              <div class="total-price" id="totalPriceDisplay">$105,900</div>
+              <div class="price-monthly-detail" id="priceMonthlyDetail">Or $1,180/mo with $8,000 down for 72 months</div>
+            </div>
+
+            <div class="order-incentives">
+              <span>✓ Federal & State EV Tax Credits eligible (up to $7,500)</span>
+              <span>✓ 4 Years / 50,000 Miles Comprehensive Warranty</span>
+              <span>✓ 8 Years / 120,000 Miles Battery & Powertrain Warranty</span>
+            </div>
+
+            <button class="btn-pill btn-primary btn-block btn-xl" id="reserveOrderBtn">
+              <span>Reserve With $500 Deposit</span>
+              <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+            <div class="deposit-guarantee">Fully refundable deposit. Delivery beginning Q2 2027.</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FREQUENTLY ASKED QUESTIONS -->
+    <section class="faq-section reveal-on-scroll">
+      <div class="section-header">
+        <span class="section-eyebrow">Questions & Answers</span>
+        <h2 class="section-title">Everything you need to know.</h2>
+      </div>
+
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>When will deliveries for SG begin?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Customer deliveries for SG Grand and SG Apex Track will commence in North America in Q2 2027, followed by Europe and Asia-Pacific in Q3 2027. SG Pure configurations will follow in late 2027.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What charging networks is SG compatible with?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>SG comes factory-standard with native NACS (North American Charging Standard) charging ports, granting instant plug-and-charge access to over 50,000 fast chargers nationwide, as well as 350kW CCS chargers via included adapters.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Is the $500 reservation deposit refundable?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. Your $500 reservation deposit is 100% refundable at any time until your order is confirmed for factory production and assigned a VIN.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How does the 900V Solid-State Hybrid battery compare in winter?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Thanks to our proprietary ceramic-electrolyte matrix and integrated heat-pump thermo-circuit, cold-weather range degradation is limited to less than 7% even at sub-zero temperatures (-10°F), compared to 30%+ in conventional lithium-ion batteries.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- APPLE-STYLE FOOTER -->
+  <footer class="global-footer">
+    <div class="footer-container">
+      <!-- Legal Apple-style numbered notes -->
+      <div class="footer-disclaimers">
+        <p>1. Acceleration timing from 0 to 60 mph is measured using standardized rollout subtraction at ambient 72°F track conditions with launch control engaged on peak charge state.</p>
+        <p>2. Stated driving range figures are manufacturer estimates based on EPA test protocol simulations. Real-world range varies depending on ambient temperature, driving style, terrain, wheel selection, and payload.</p>
+        <p>3. 10% to 80% charging in 15 minutes requires an active 900V DC HyperCharger capable of 350kW or higher output with preconditioned battery pack.</p>
+        <p>4. Level 3 autonomous driving features require active driver alertness and will be deployed via over-the-air updates subject to local regulatory approval in your jurisdiction.</p>
+      </div>
+
+      <div class="footer-nav-grid">
+        <div class="footer-col">
+          <h4 class="col-title">Vehicle</h4>
+          <ul>
+            <li><a href="#overview">SG Overview</a></li>
+            <li><a href="#specs">SG Pure</a></li>
+            <li><a href="#specs">SG Grand</a></li>
+            <li><a href="#specs">SG Apex Track</a></li>
+            <li><a href="#studio360">360° Studio</a></li>
+            <li><a href="#configurator">Build & Reserve</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="col-title">Engineering</h4>
+          <ul>
+            <li><a href="#architecture">900V Architecture</a></li>
+            <li><a href="#features">Aerodynamic Design</a></li>
+            <li><a href="#features">Solid-State Battery</a></li>
+            <li><a href="#features">HorizonOS 3.0</a></li>
+            <li><a href="#features">Neural Co-Pilot</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="col-title">Charging & Energy</h4>
+          <ul>
+            <li><a href="#">SG Home Wallbox</a></li>
+            <li><a href="#">HyperCharge Supernet</a></li>
+            <li><a href="#">Solar Roof Integration</a></li>
+            <li><a href="#">Fleet Energy Solutions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="col-title">Ownership & Support</h4>
+          <ul>
+            <li><a href="#">Service Centers</a></li>
+            <li><a href="#">Warranty Coverage</a></li>
+            <li><a href="#">Vehicle Insurance</a></li>
+            <li><a href="#">Trade-In Valuation</a></li>
+            <li><a href="#">Customer Support</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          Copyright © 2026 SG Automotive Technologies Inc. All rights reserved. Designed with Apple-level precision.
+        </div>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Sales Policy</a>
+          <a href="#">Legal & Regulatory</a>
+          <a href="#">Site Map</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- KEYNOTE FILM MODAL -->
+  <div class="modal-overlay" id="keynoteModal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeKeynoteBtn" aria-label="Close Keynote">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="modal-header">
+        <span class="modal-badge">Special Launch Event</span>
+        <h3 class="modal-title">Introducing SG — The Cinema Experience</h3>
+      </div>
+      <div class="video-mock-container">
+        <div class="video-ambient-glow"></div>
+        <div class="film-player">
+          <div class="film-canvas-art">
+            <div class="film-glow-ring"></div>
+            <div class="film-title-reveal">
+              <span class="film-brand">SG</span>
+              <span class="film-sub">REWRITE THE ROAD</span>
+            </div>
+            <div class="film-audio-visualizer">
+              <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+              <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+              <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </div>
+          </div>
+          <div class="film-controls">
+            <button class="btn-play-pause" id="filmPlayBtn">
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </button>
+            <div class="film-progress-bar">
+              <div class="film-progress-fill" style="width: 42%;"></div>
+            </div>
+            <span class="film-timestamp">01:14 / 02:48</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ORDER RESERVATION MODAL -->
+  <div class="modal-overlay" id="orderModal">
+    <div class="modal-card order-modal-card">
+      <button class="modal-close-btn" id="closeOrderBtn" aria-label="Close Reservation">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="order-summary-header">
+        <span class="modal-badge">Reservation Order</span>
+        <h3 class="order-vehicle-name" id="modalVehicleName">SG Grand AWD</h3>
+        <p class="order-build-id">Build Token: <code id="modalBuildCode">SG-2027-GRD-900V</code></p>
+      </div>
+
+      <div class="order-breakdown">
+        <div class="order-row">
+          <span>Base Powertrain (<span id="modalTrimName">SG Grand</span>)</span>
+          <span id="modalBasePrice">$99,900</span>
+        </div>
+        <div class="order-row">
+          <span>Exterior Paint (<span id="modalPaintName">Space Obsidian</span>)</span>
+          <span id="modalPaintPrice">Included</span>
+        </div>
+        <div class="order-row">
+          <span>Wheels & Aerodynamics</span>
+          <span id="modalWheelPrice">Included</span>
+        </div>
+        <div class="order-row">
+          <span>Interior Theme (<span id="modalInteriorName">Eclipse Black</span>)</span>
+          <span id="modalInteriorPrice">Included</span>
+        </div>
+        <div class="order-row">
+          <span>Packages & Autonomous Upgrades</span>
+          <span id="modalPackagesPrice">$6,000</span>
+        </div>
+        <div class="order-row total-order-row">
+          <span>Total Purchase Price</span>
+          <span id="modalTotalPrice">$105,900</span>
+        </div>
+        <div class="order-row deposit-due-row">
+          <span>Refundable Deposit Due Today</span>
+          <span class="deposit-amount">$500</span>
+        </div>
+      </div>
+
+      <!-- Quick Checkout Simulation Form -->
+      <form class="order-form" id="checkoutForm" onsubmit="event.preventDefault();">
+        <div class="form-row">
+          <input type="text" class="form-input" placeholder="First and Last Name" required value="Alex Vance">
+          <input type="email" class="form-input" placeholder="Email Address" required value="alex.vance@apple.com">
+        </div>
+        <div class="form-row">
+          <input type="tel" class="form-input" placeholder="Phone Number" required value="+1 (555) 019-2834">
+          <input type="text" class="form-input" placeholder="Postal / ZIP Code" required value="94025">
+        </div>
+
+        <button type="submit" class="btn-pill btn-apple-pay" id="applePayBtn">
+          <span>Pay with Apple Pay</span>
+        </button>
+
+        <button type="submit" class="btn-pill btn-primary btn-block btn-lg" id="confirmDepositBtn">
+          <span>Complete $500 Deposit</span>
+        </button>
+      </form>
+
+      <div class="order-security-note">
+        <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        <span>256-bit encrypted reservation. Full refund guarantee within 30 days of production lock.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- External scripts: Three.js for 3D Car rendering -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
